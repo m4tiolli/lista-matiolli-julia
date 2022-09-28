@@ -14,7 +14,9 @@ export default function Home(){
         <View style={styles.container}> 
             <Text style={styles.title}>Conversor para Real</Text>
             <TextInput style={styles.input} onChangeText={setDolar} placeholder="Valor em Dolar"></TextInput>
-            <TextInput style={styles.input} onChangeText={setCotacao} placeholder="Cotação de Hoje"></TextInput>
+            <TextInput style={styles.input} onChangeText={setCotacao} placeholder="Cotação de Hoje">
+                
+            </TextInput>
               <Text style={styles.subtitulo}>US$ {dolar} é igual a: RS$ {total}</Text>
             <TouchableOpacity style={styles.button} onPress={ConverterReal}>
                 <Text style={styles.buttonText}>Converter</Text>
